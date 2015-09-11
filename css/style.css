@@ -1,0 +1,26 @@
+.box {
+    margin-top: 200px;
+    height: 100px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.box-blank {
+    margin-top: 200px;
+    
+}
+
+.vertical {
+  margin-left: 20px;
+  vertical-align: baseline;
+  position: relative;
+  top:-5px;
+}
+
+
+.text-style{
+    font-family: impact, sans-serif;
+    font-size: 50px;
+    word-spacing: 5pt;
+
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lottery</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="center">
+                     <div class="col s4 col box center"><h1 class="center" id="num1">number1</h1>
+                    </div>
+                    <div class="col s4 box-blank">
+                    </div>
+                    <div class="col s4 box center"><h1 class="center" id="num2">number2</h1>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="center">
+                     <div class="col s4 box"><h1 class="center" id="num3">number3</h1>
+                    </div>
+                    <div class="col s4 box-blank">
+                    </div>
+                    <div class="col s4 box"><h1 class="center" id="num4">number4</h1>
+                    </div>
+                    <button class="btn center" id="roll">button</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            
+            document.getElementById("roll").onclick = buttonHandler;
+            
+                function buttonHandler (){
+                    console.log("lola");
+                    var ramNum1 = Math.floor (Math.random()*55 + 1);
+                    document.getElementById("num1").innerHTML = ramNum1;
+                    var ramNum2 = Math.floor (Math.random()*55 + 1);
+                    document.getElementById("num2").innerHTML = ramNum2;
+                    var ramNum3 = Math.floor (Math.random()*55 + 1);
+                    document.getElementById("num3").innerHTML = ramNum3;
+                    var ramNum4 = Math.floor (Math.random()*55 + 1);
+                    document.getElementById("num4").innerHTML = ramNum4;
+                }
+        </script>
+    </body>
+</html>
